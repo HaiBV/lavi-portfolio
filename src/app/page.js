@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { works } from "@/data/works";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
             <p>{work.description}</p>
             <p>{work.date}</p>
             <p>{work.heroImage}</p>
+            <Image src={work.heroImage} alt="" width={1920} height={1080}></Image>
             <p>{work.caseStudy}</p>
           </li>
         ))}
