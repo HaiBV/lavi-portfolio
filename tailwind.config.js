@@ -12,9 +12,6 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      translate: {
-        '-50%': '-50%',
-      },
       fontSize: {
         '110': '110px',
         '21': '21px',
@@ -24,11 +21,9 @@ module.exports = {
         'current': '#D0D1E7',
       },
       spacing: {
-        '20': '20%',
-        '10': '10%',
-        '40': '40%',
-        '90': '90%',
-        '-1.75rem': '-1.75rem',
+        '20.4vh': '20.4vh',
+        '21vh': '21vh',
+        '18.4vh': '18.4vh',
       }
     },
   },
