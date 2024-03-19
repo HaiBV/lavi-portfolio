@@ -23,12 +23,12 @@ export default function Home() {
                         <div className={"relative col-start-2 font-medium text-68 leading-none pl-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:left-0"}></div>
                         <p className={"relative col-start-6 font-medium text-68 leading-none pl-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:left-0"}>{work.month}</p>
                         <p className={"relative col-start-10 font-medium text-68 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:-left-9"}>{work.year}</p>
+                        <a href="#" className={"absolute text-21 leading-none font-medium border-b border-gray pb-3 right-6 top-[55.4%] -translate-y-[50%]"}>Case study</a>
                         <Image className={"absolute -z-10 w-full h-full top-0 left-0 object-cover"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
                     </li>
                 ))}
             </ul>
             <div className={"absolute w-full grid grid-cols-10 gap-x-6 top-6 left-0 text-xs px-6"}><p className={"relative col-start-8 col-span-3 pl-4 before:absolute before:bg-current before:w-2.5 before:h-2.5 before:top-0.5 before:left-0"}>Open to freelance opportunities</p></div>
-            <a href="#" className={"absolute text-21 leading-none font-medium border-b border-gray pb-3 right-6 top-[55.4%] -translate-y-[50%]"}>Case study</a>
             <div className={"fixed grid grid-cols-10 w-full gap-x-6 bottom-6 left-0 px-6"}>
                 <ul className={"text-2xl col-span-3 flex gap-x-6 col-start-1"}>
                     <li><a href="#">Work</a></li>
