@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.workSlider.swiper-backface-hidden .swiper-slide {
+  @apply duration-1000 ease-in-out scale-50;
+}
+
+.workSlider .swiper-slide.swiper-slide-active {
+  @apply scale-100;
+}

@@ -1,5 +1,10 @@
+"use client"
 import Image from "next/image";
 import { works } from "@/data/works";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Mousewheel } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/mousewheel';
 
 export default function Home() {
   return (
@@ -11,10 +16,15 @@ export default function Home() {
           </a>
         </h1>
       </header>
-        <section className={"text-current"}>
-            <ul>
+        <section className={"text-current bg-black/80"}>
+            <Swiper
+                direction={'vertical'}
+                modules={[Mousewheel]}
+                mousewheel={true}
+                className="workSlider !h-screen"
+            >
                 {works.map((work) => (
-                    <li key={work.title} className={"relative h-screen grid grid-cols-10 gap-x-6 auto-rows-max px-6 pt-[20.4vh]"}>
+                    <SwiperSlide key={work.title} className={"relative !h-screen !grid grid-cols-10 gap-x-6 auto-rows-max px-6 pt-[20.4vh] duration-700"}>
                         <div className={"relative col-start-2 font-medium text-68 pl-7 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}></div>
                         <p className={"relative col-start-6 font-medium text-68 pl-7 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}>{work.date}</p>
                         <p className={"relative col-start-10 font-medium text-68 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:-left-9"}>{work.century}</p>
@@ -24,12 +34,12 @@ export default function Home() {
                         <p className={"relative col-start-6 font-medium text-68 leading-none pl-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:left-0"}>{work.month}</p>
                         <p className={"relative col-start-10 font-medium text-68 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:-left-9"}>{work.year}</p>
                         <a href="#" className={"absolute text-21 leading-none font-medium border-b border-gray pb-3 right-6 top-[55.4%] -translate-y-[50%]"}>Case study</a>
-                        <Image className={"absolute -z-10 w-full h-full top-0 left-0 object-cover"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
-                    </li>
+                        <Image className={"absolute -z-10 w-full h-screen top-0 left-0 object-cover"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
+                    </SwiperSlide>
                 ))}
-            </ul>
-            <div className={"absolute w-full grid grid-cols-10 gap-x-6 top-6 left-0 text-xs px-6"}><p className={"relative col-start-8 col-span-3 pl-4 before:absolute before:bg-current before:w-2.5 before:h-2.5 before:top-0.5 before:left-0"}>Open to freelance opportunities</p></div>
-            <div className={"fixed grid grid-cols-10 w-full gap-x-6 bottom-6 left-0 px-6"}>
+            </Swiper>
+            <div className={"absolute z-10 w-full grid grid-cols-10 gap-x-6 top-6 left-0 text-xs px-6"}><p className={"relative col-start-8 col-span-3 pl-4 before:absolute before:bg-current before:w-2.5 before:h-2.5 before:top-0.5 before:left-0"}>Open to freelance opportunities</p></div>
+            <div className={"fixed z-10 grid grid-cols-10 w-full gap-x-6 bottom-6 left-0 px-6"}>
                 <ul className={"text-2xl col-span-3 flex gap-x-6 col-start-1"}>
                     <li><a href="#">Work</a></li>
                     <li><a href="#" className={"opacity-50"}>About</a></li>
