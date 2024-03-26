@@ -8,11 +8,11 @@ import 'swiper/css/mousewheel';
 
 export default function Home() {
   return (
-    <main>
+    <main className="">
       <header className={"fixed w-full top-0 left-0 p-6 z-50"}>
         <h1>
           <a href="">
-              <Image src="/img/hero/logo.svg" alt="Lavio" width={166} height={88}></Image>
+            <Image src="/img/hero/logo.svg" alt="Lavio" width={166} height={88}></Image>
           </a>
         </h1>
       </header>
