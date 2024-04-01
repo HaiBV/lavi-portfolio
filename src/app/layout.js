@@ -1,7 +1,27 @@
+import clsx from "clsx";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const esko = localFont({
+  src: "../../public/fonts/esko.ttf",
+  display: "swap",
+  variable: "--font-esko",
+});
+
+const gridular = localFont({
+  src: "../../public/fonts/gridular.otf",
+  display: "swap",
+  variable: "--font-gridular",
+});
+
+const water = localFont({
+  src: "../../public/fonts/water.otf",
+  display: "swap",
+  variable: "--font-water",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(inter.className, esko.variable, gridular.variable, water.variable)}>{children}</body>
     </html>
   );
 }
