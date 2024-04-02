@@ -25,12 +25,17 @@ export default function Home() {
             </div>
             <div className={"relative max-w-[1314px] mx-auto mt-[10vh] -mb-[50px]"}>
                 <p className={"absolute w-max text-[#eaeaf480] top-[20%] left-[65%] -translate-y-[50%] -translate-x-[50%]"}>( Scroll to discover )</p>
-                <Image className={"w-full mix-blend-exclusion"} src="/img/about/logo.png" alt="" width={1314} height={657}></Image>
+                <Image className={"w-full mix-blend-exclusion"} src="/img/about/logo.png" alt="Lavio" width={1314} height={657}></Image>
             </div>
             <div className={"grid grid-cols-10 gap-x-6 p-6"}>
-                <h2 className={"text-[24px] leading-none"}>MY STORY</h2>
+                <h2 className={"col-span-2 text-[24px] leading-none"}>MY STORY</h2>
                 <p className={"col-start-5 col-span-5 text-[68px] leading-none"}>IT ALL STARTED IN (2016) I BEGUN TO</p>
-                <p className={"col-start-6 col-span-5 text-[68px] leading-none"}>IMMERSE MYSELF INTO DIGITAL WORLD</p>
+                <p className={"col-start-6 col-span-5 text-[68px] leading-none mb-[50px]"}>IMMERSE MYSELF INTO DIGITAL WORLD</p>
+                <Image className={"col-start-2 col-span-2 w-full"} src="/img/about/main.jpg" alt="MY STORY" width={356} height={394}></Image>
+                <div className={"relative col-start-7 col-span-3 text-[24px] leading-none before:absolute before:bg-[url('/img/about/dots.png')] before:bg-contain before:bg-center before:w-[24px] before:h-[8px] before:bottom-0 before:left-0"}>
+                    <p className={"mb-[20px]"}>After given the chance to create the first website design, I knew I’d totally fall in love with this career path.</p>
+                    <p>Throughout the years, my passion for this craft remains unchanged. Each project is a new canvas, a fresh opportunity to blend aesthetics with functionality.</p>
+                </div>
             </div>
         </section>
     </main>
