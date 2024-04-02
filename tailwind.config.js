@@ -23,19 +23,6 @@ module.exports = {
         gridular: ["var(--font-gridular)"],
         water: ["var(--font-water)"],
       },
-      fontSize: {
-        110: "110px",
-        21: "21px",
-        68: "68px",
-      },
-      colors: {
-        current: "#D0D1E7",
-      },
-      spacing: {
-        "20.4vh": "20.4vh",
-        "21vh": "21vh",
-        "18.4vh": "18.4vh",
-      },
     },
   },
   plugins: [],
