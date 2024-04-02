@@ -32,30 +32,22 @@ body {
   }
 }
 
+.workSlider .swiper-slide .item {
+  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+}
+
 .workSlider .swiper-slide.swiper-slide-active .item {
-  @apply scale-100;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .workSlider .swiper-slide.swiper-slide-active .item:before {
-  @apply scale-100;
-}
-
-.workSlider .swiper-slide.swiper-slide-active .item img {
-  @apply opacity-100;
+  @apply scale-[2];
 }
 
 .workSlider .swiper-slide.swiper-slide-prev .item {
-  @apply scale-100;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .workSlider .swiper-slide.swiper-slide-prev .item:before {
-  @apply scale-100;
-}
-
-.workSlider .swiper-slide.swiper-slide-prev .item img {
-  @apply opacity-100;
-}
-
-.workSlider .swiper-slide.swiper-slide-next .item {
-  @apply scale-0;
+  @apply scale-[2];
 }

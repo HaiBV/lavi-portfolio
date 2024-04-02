@@ -26,7 +26,7 @@ export default function Home() {
             >
                 {works.map((work) => (
                     <SwiperSlide key={work.title}>
-                        <div className={"item relative !h-screen !grid grid-cols-10 gap-x-6 auto-rows-max px-6 pt-[20.4vh] before:absolute before:bg-[url('/img/hero/logo-slider.png')] before:bg-contain before:w-[200%] before:h-[200%] before:top-[50%] before:left-[50%] before:-translate-y-[50%] before:-translate-x-[50%] before:scale-0 before:duration-[2000ms] duration-[2500ms]"}>
+                        <div className={"item relative !h-screen !grid grid-cols-10 gap-x-6 auto-rows-max px-6 pt-[20.4vh] before:absolute before:bg-[url('/img/hero/logo-slider.png')] before:bg-contain before:w-[100%] before:h-[100%] before:top-[50%] before:left-[50%] before:-translate-y-[50%] before:-translate-x-[50%] before:scale-0 before:duration-[3200ms] duration-[2000ms]"}>
                             <div className={"relative col-start-2 font-medium text-68 pl-7 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}></div>
                             <p className={"relative col-start-6 font-medium text-68 pl-7 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}>{work.date}</p>
                             <p className={"relative col-start-10 font-medium text-68 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:-left-9"}>{work.century}</p>
@@ -36,7 +36,7 @@ export default function Home() {
                             <p className={"relative col-start-6 font-medium text-68 leading-none pl-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:left-0"}>{work.month}</p>
                             <p className={"relative col-start-10 font-medium text-68 leading-none before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:-left-9"}>{work.year}</p>
                             <a href="#" className={"absolute text-21 leading-none font-medium border-b border-gray pb-3 right-6 top-[55.4%] -translate-y-[50%]"}>Case study</a>
-                            <Image className={"absolute -z-10 w-full h-screen top-0 left-0 object-cover opacity-0 duration-[2000ms]"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
+                            <Image className={"absolute -z-10 w-screen h-screen top-0 left-0 object-cover"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
                         </div>
                     </SwiperSlide>
                 ))}
