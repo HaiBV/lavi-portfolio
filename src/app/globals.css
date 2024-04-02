@@ -31,26 +31,22 @@ body {
   clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
 }
 
+.workSlider .swiper-slide.swiper-slide-active {
+  @apply z-10;
+}
+
 .workSlider .swiper-slide.swiper-slide-active .item {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.workSlider .swiper-slide.swiper-slide-active .item:before {
-  @apply scale-[2.1];
-}
-
-.workSlider .swiper-slide.swiper-slide-active .item:before {
-  @apply scale-[2.1] backdrop-blur-none blur-none;
+.workSlider .swiper-slide.swiper-slide-active:before {
+  @apply scale-[5] opacity-0;
 }
 
 .workSlider .swiper-slide.swiper-slide-prev .item {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.workSlider .swiper-slide.swiper-slide-prev .item:before {
-  @apply scale-[2.1];
-}
-
-.workSlider .swiper-slide.swiper-slide-prev .item:before {
-  @apply scale-[2.1] backdrop-blur-none blur-none;
+.workSlider .swiper-slide.swiper-slide-prev:before {
+  @apply scale-[5] opacity-0;
 }
