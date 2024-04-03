@@ -16,7 +16,7 @@ export default function Home() {
             <Image src="/img/hero/logo.svg" alt="Lavio" className={"w-100"} width={166} height={88}></Image>
           </a>
         </h1>
-          <p className={"relative text-xs col-start-8 col-span-3 pl-4 before:absolute before:bg-current before:w-2.5 before:h-2.5 before:top-0.5 before:left-0"}>Open to freelance opportunities</p>
+          <p className={"relative text-base col-start-8 col-span-3 -mt-2 pl-4 tracking-tight before:absolute before:bg-current before:w-2 before:h-2 before:top-[9px] before:left-0"}>Open to freelance opportunities</p>
           <div className={"fixed z-10 grid grid-cols-10 text-[21px] w-full gap-x-6 bottom-6 left-0 px-6"}>
               <ul className={"col-span-3 flex gap-x-6 col-start-1"}>
                   <li><a href="">Work</a></li>

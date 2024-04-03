@@ -10,14 +10,13 @@ export default function Home() {
                 <Image src="/img/hero/logo.svg" alt="Lavio" className={"w-full"} width={166} height={88}></Image>
             </a>
         </h1>
-          <p className={"relative text-xs col-start-8 col-span-3 pl-4 before:absolute before:bg-current before:w-2.5 before:h-2.5 before:top-0.5 before:left-0"}>Open to freelance opportunities</p>
+          <p className={"relative text-base col-start-8 col-span-3 -mt-2 pl-4 tracking-tight before:absolute before:bg-current before:w-2 before:h-2 before:top-[9px] before:left-0"}>Open to freelance opportunities</p>
           <div className={"fixed z-10 grid grid-cols-10 w-full text-[21px] gap-x-6 bottom-6 left-0 px-6"}>
               <ul className={"col-span-3 flex gap-x-6 col-start-1"}>
                   <li><a href="">Work</a></li>
                   <li><a href="" className={"opacity-50"}>About</a></li>
                   <li><a href="" className={"opacity-50"}>Contact</a></li>
               </ul>
-              <p className={"col-span-2 col-start-5"}>Keep scrolling</p>
               <p className={"col-span-3 col-start-8"}>Saigon, Vietnam <span className={"ml-8 opacity-50"}>12:21PM - GMT+7</span></p>
           </div>
       </header>
