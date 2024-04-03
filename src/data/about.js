@@ -1,4 +1,4 @@
-export const past = [
+export const projects = [
   {
     number: "23",
     title: "Visual Designer",
@@ -65,7 +65,7 @@ export const clients = [
   },
 ];
 
-export const sns = [
+export const socials = [
   {
     title: "Instagram",
   },
