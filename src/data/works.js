@@ -7,6 +7,7 @@ export const works = [
     century: "20",
     year: "24",
     heroImage: "/img/hero/1.png",
+    tags: ["Mobile Design", "UI UX Design", "Art Design"],
   },
   {
     title: "AON",
@@ -16,6 +17,7 @@ export const works = [
     century: "20",
     year: "23",
     heroImage: "/img/hero/2.png",
+    tags: ["UI UX Design"],
   },
   {
     title: "EXXON MOBIL",
@@ -25,6 +27,7 @@ export const works = [
     century: "20",
     year: "23",
     heroImage: "/img/hero/3.png",
+    tags: ["UI UX Design"],
   },
   {
     title: "GfE",
@@ -34,6 +37,7 @@ export const works = [
     century: "20",
     year: "23",
     heroImage: "/img/hero/4.png",
+    tags: ["Story Board"],
   },
   {
     title: "HALONG HUB",
@@ -43,6 +47,7 @@ export const works = [
     century: "20",
     year: "23",
     heroImage: "/img/hero/5.png",
+    tags: ["Website Design", "UI UX Design", "Art Direction"],
   },
   {
     title: "GO FLY",
@@ -52,5 +57,6 @@ export const works = [
     century: "20",
     year: "23",
     heroImage: "/img/hero/6.png",
+    tags: ["Website Design", "UI UX Design", "Art Direction"],
   },
 ];

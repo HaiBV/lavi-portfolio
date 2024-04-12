@@ -36,7 +36,7 @@ body {
 }
 
 .workSlider .swiper-slide.swiper-slide-active .ttl-slider span{
-  @apply top-0;
+  @apply translate-y-0;
 }
 
 .workSlider .swiper-slide.swiper-slide-active .img-slider {

@@ -23,6 +23,9 @@ module.exports = {
         gridular: ["var(--font-gridular)"],
         water: ["var(--font-water)"],
       },
+      gridTemplateRows: {
+        slide: "min-content 1fr min-content",
+      },
     },
   },
   plugins: [],
