@@ -6,6 +6,7 @@ import { Mousewheel, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/mousewheel";
 import "swiper/css/effect-fade";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -55,9 +56,9 @@ export default function Home() {
                     ))}
                   </p>
                 </div>
-                <a href="" className={"text-[21px] border-b border-gray col-start-10 justify-self-end"}>
+                <Link href="" className={"text-[21px] col-start-10 justify-self-end underline-double"}>
                   Case study
-                </a>
+                </Link>
               </div>
               <div className="grid grid-cols-10 gap-x-6">
                 <div

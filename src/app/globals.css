@@ -17,8 +17,8 @@
 }
 
 body {
-  color: #D0D1E7;
-  background: #0F0F1A;
+  color: #d0d1e7;
+  background: #0f0f1a;
 }
 
 @layer utilities {
@@ -35,7 +35,7 @@ body {
   @apply z-10;
 }
 
-.workSlider .swiper-slide.swiper-slide-active .ttl-slider span{
+.workSlider .swiper-slide.swiper-slide-active .ttl-slider span {
   @apply translate-y-0;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .workSlider .swiper-slide.swiper-slide-active:before {
-  @apply scale-[5] opacity-0;
+  @apply scale-[5];
 }
 
 .workSlider .swiper-slide.swiper-slide-prev .img-slider {
@@ -53,4 +53,44 @@ body {
 
 .workSlider .swiper-slide.swiper-slide-prev:before {
   @apply scale-[5] opacity-0;
+}
+
+.underline-double {
+  display: inline-flex;
+  position: relative;
+  white-space: nowrap;
+}
+
+.underline-double:after,
+.underline-double:before {
+  content: "";
+  position: absolute;
+  bottom: -0.2em;
+  right: 0;
+  left: 0;
+  height: 0.05em;
+  min-height: 1px;
+  background-color: currentColor;
+}
+
+.underline-double:before {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform .55s cubic-bezier(.785,.135,.15,.86);
+  transition-delay: .5s;
+}
+
+.underline-double:after,
+.underline-double:hover:before {
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: 0s;
+}
+
+.underline-double:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: 0.2s;
 }

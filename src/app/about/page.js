@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projects, clients, socials } from "@/data/about";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -121,16 +122,16 @@ export default function About() {
               </li>
             ))}
           </ul>
-          <a href="" className={"block col-span-3"}>
+          <Link href="/" className={"block col-span-3"}>
             <Image className={"w-full"} src="/img/about/logo-footer.svg" alt="Lavi" width={545} height={282}></Image>
-          </a>
+          </Link>
           <p className={"col-start-7 col-span-2 flex items-center leading-snug pb-[72px]"}>
             Have a project in mind?
             <br />
             Let’s talk
           </p>
           <p className={"col-start-9 col-span-2 flex items-center pb-[97px]"}>
-            <a href="" className={"border-b-[1px] border-[#0F0F1A] pb-1"}>
+            <a href="mailto:hello@lavidesign.studio" className={"border-b-[1px] border-[#0F0F1A] pb-1"}>
               hello@lavidesign.studio
             </a>
           </p>
@@ -139,13 +140,13 @@ export default function About() {
         <div className={"grid grid-cols-10 gap-x-6 mx-6 border-t-[1px] border-[#0F0F1A] mt-[63px] py-[72px]"}>
           <ul className={"col-span-3 flex gap-x-6"}>
             <li>
-              <a href="">Work</a>
+              <Link href="/">Work</Link>
             </li>
             <li>
-              <a href="">About</a>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
           <p className={"col-span-3 col-start-8"}>

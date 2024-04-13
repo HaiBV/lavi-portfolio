@@ -1,12 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => {
   return (
     <header className={"fixed w-full top-0 left-0 grid grid-cols-10 gap-x-6 p-6 z-50"}>
       <h1>
-        <a href="" className={"block"}>
+        <Link href="/" className="block">
           <Image src="/img/hero/logo.svg" alt="Lavio" className={"w-100"} width={166} height={88}></Image>
-        </a>
+        </Link>
       </h1>
       <p
         className={

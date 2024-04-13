@@ -1,20 +1,18 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
     <footer>
       <div className={"fixed z-10 grid grid-cols-10 text-[21px] w-full gap-x-6 bottom-6 left-0 px-6"}>
         <ul className={"col-span-3 flex gap-x-6 col-start-1"}>
           <li>
-            <a href="">Work</a>
+            <Link href={"/"}>Work</Link>
           </li>
           <li>
-            <a href="" className={"opacity-50"}>
-              About
-            </a>
+            <Link href={"/about"}>About</Link>
           </li>
           <li>
-            <a href="" className={"opacity-50"}>
-              Contact
-            </a>
+            <Link href={"/contact"}>Contact</Link>
           </li>
         </ul>
         <p className={"col-span-2 col-start-5"}>Keep scrolling</p>
