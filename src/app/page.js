@@ -16,7 +16,7 @@ export default function Home() {
           <SwiperSlide
             key={work.title}
             className={
-              "relative before:absolute before:bg-[url('/img/hero/logo-slider.png')] before:bg-contain before:bg-center before:w-[100%] before:h-[100%] before:top-[50%] before:left-[50%] before:-translate-y-[50%] before:-translate-x-[50%] before:scale-0 before:z-10 before:duration-[3800ms] before:pointer-events-none"
+              "relative before:absolute before:bg-[url('/img/hero/logo-slider.svg')] before:bg-contain before:bg-no-repeat before:bg-center before:w-[100%] before:h-[100%] before:top-[50%] before:left-[50%] before:-translate-y-[50%] before:-translate-x-[50%] before:scale-0 before:z-10 before:pointer-events-none"
             }
           >
             <div
