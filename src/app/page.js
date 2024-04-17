@@ -47,7 +47,7 @@ export default function Home() {
               </div>
               <div className="grid items-center grid-cols-10 gap-x-6">
                 <h2 className={"ttl-slider col-span-5 text-[110px] overflow-hidden"}>
-                  <span className={"relative block translate-y-full duration-700 delay-[2000ms]"}>{work.title}</span>
+                  <span className={"relative block translate-y-full duration-700 delay-[2530ms]"}>{work.title}</span>
                 </h2>
                 <div className="col-span-2">
                   <p className={"flex flex-col items-start text-2xl"}>
