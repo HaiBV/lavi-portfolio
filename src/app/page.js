@@ -11,7 +11,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <section>
-      <Swiper modules={[Mousewheel, EffectFade]} effect={"fade"} mousewheel={true} className="h-screen workSlider">
+      <Swiper
+        modules={[Mousewheel, EffectFade]}
+        effect={"fade"}
+        mousewheel={{ enable: true, thresholdTime: 3000 }}
+        className="h-screen workSlider"
+      >
         {works.map((work) => (
           <SwiperSlide
             key={work.title}
