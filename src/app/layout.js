@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={clsx(inter.className, esko.variable, gridular.variable, water.variable)}>
         <Header />
-        <main>{children}</main>
+        <main className={"font-water"}>{children}</main>
         <Footer />
       </body>
     </html>
