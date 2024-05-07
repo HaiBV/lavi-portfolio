@@ -6,6 +6,7 @@ import { Mousewheel, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/mousewheel';
 import "swiper/css/effect-fade";
+import $ from 'jquery';
 
 export default function Home() {
   return (
@@ -32,10 +33,17 @@ export default function Home() {
                 modules={[Mousewheel, EffectFade]}
                 effect={"fade"}
                 mousewheel={true}
+                onSlideChange={() => {
+                    setTimeout(
+                        function() {
+                            $(".workSlider .swiper-slide-active").addClass("on")
+                        },1
+                    );
+                }}
                 className="workSlider !h-screen"
             >
                 {works.map((work) => (
-                    <SwiperSlide key={work.title} className={"relative before:absolute before:bg-[url('/img/hero/logo-slider.png')] before:bg-contain before:bg-center before:w-[100%] before:h-[100%] before:top-[50%] before:left-[50%] before:-translate-y-[50%] before:-translate-x-[50%] before:scale-0 before:z-10 before:duration-[3800ms] before:pointer-events-none"}>
+                    <SwiperSlide key={work.title} className={"relative"}>
                         <div className={"relative !h-screen !grid grid-cols-10 gap-x-6 auto-rows-max px-6 pt-[20.4vh] font-medium text-[68px] leading-none"}>
                             <div className={"relative col-start-2 pl-7 before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}></div>
                             <p className={"relative col-start-6 pl-7 before:absolute before:bg-current before:w-2 before:h-2 before:top-3 before:left-0"}>{work.date}</p>
@@ -46,7 +54,7 @@ export default function Home() {
                             <p className={"relative col-start-6 pl-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:left-0"}>{work.month}</p>
                             <p className={"relative col-start-10 before:absolute before:bg-current before:w-2 before:h-2 before:bottom-3 before:-left-9"}>{work.year}</p>
                             <a href="" className={"absolute text-[21px] border-b border-gray pb-3 right-6 top-[55.4%] -translate-y-[50%]"}>Case study</a>
-                            <div className={"img-slider absolute -z-10 w-screen h-screen top-0 left-0 duration-[2000ms]"}>
+                            <div className={"img-slider absolute -z-10 w-screen h-screen top-0 left-0"}>
                                 <Image className={"absolute w-screen h-screen object-cover"} src={work.heroImage} alt="" width={1920} height={1080}></Image>
                             </div>
                         </div>

@@ -27,30 +27,74 @@ body {
   }
 }
 
-.workSlider .swiper-slide .img-slider {
-  clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
-}
-
 .workSlider .swiper-slide.swiper-slide-active {
   @apply z-10;
 }
 
-.workSlider .swiper-slide.swiper-slide-active .ttl-slider span{
+.workSlider .swiper-slide:first-child .img-slider {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.workSlider .swiper-slide:first-child .ttl-slider span{
   @apply top-0;
 }
 
-.workSlider .swiper-slide.swiper-slide-active .img-slider {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.workSlider .swiper-slide.swiper-slide-active.on .ttl-slider span{
+  @apply top-0;
 }
 
-.workSlider .swiper-slide.swiper-slide-active:before {
-  @apply scale-[5] opacity-0;
+.workSlider .swiper-slide.swiper-slide-active.on .img-slider {
+  -webkit-animation: clip 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: clip 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.workSlider .swiper-slide.swiper-slide-prev .img-slider {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+.workSlider .swiper-slide.swiper-slide-active.on:before {
+  content: "";
+  position: absolute;
+  background: url("../../public/img/hero/logo-slider.png") center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  -webkit-animation: zoom 3.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: zoom 3.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.workSlider .swiper-slide.swiper-slide-prev:before {
-  @apply scale-[5] opacity-0;
+@-webkit-keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
+
+@-webkit-keyframes clip {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+@keyframes clip {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
